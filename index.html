@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="input-form">
+    <h1>Testimonial Generator</h1>
+
+    <form id="form">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name..." required>
+      </div>
+
+      <div class="form-row">
+        <label for="role">Role</label>
+        <input type="text" id="role" placeholder="Enter your role..." required>
+      </div>
+
+      <div class="rating">
+        <label>Rating</label>
+        <div class="stars">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" rows="5" placeholder="Enter your Feedback..." required></textarea>
+      </div>
+
+      <button type="submit">Generate</button>
+    </form>
+  </div>
+
+  <!-- Output -->
+  <div class="slider">
+    <div class="slide-track" id="track">
+
+      <div class="testimonial">
+        <i class="fa-solid fa-quote-left quote"></i>
+
+        <p class="message"></p>
+
+        <div class="stars-display"></div>
+
+        <div class="user-info">
+          <h4 class="userName"></h4>
+          <small class="userRole"></small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="rating.js"></script>
+</body>
+
+</html>
